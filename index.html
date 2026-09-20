@@ -1,236 +1,1741 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#8e44ad">
 
-  <title>Dream Decor Ludhiana</title>
+<title>Dream Decor Ludhiana</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial,sans-serif;
+}
 
-    body {
-      background: #fff7fb;
-      color: #222;
-    }
+body{
+  background:#fff7fb;
+  color:#222;
+}
 
-    header {
-      background: linear-gradient(135deg, #ff4f9a, #8e44ad);
-      color: white;
-      text-align: center;
-      padding: 35px 20px;
-    }
+header{
+  background:linear-gradient(135deg,#ff4f9a,#8e44ad);
+  color:white;
+  text-align:center;
+  padding:30px 15px;
+}
 
-    header h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
+header h1{
+  font-size:32px;
+  margin-bottom:8px;
+}
 
-    header p {
-      font-size: 17px;
-    }
+header p{
+  font-size:16px;
+}
 
-    .hero {
-      text-align: center;
-      padding: 35px 20px;
-    }
+nav{
+  background:white;
+  padding:12px;
+  display:flex;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 2px 10px #ddd;
+}
 
-    .hero h2 {
-      font-size: 28px;
-      color: #d63384;
-      margin-bottom: 12px;
-    }
+nav a{
+  text-decoration:none;
+  color:#8e44ad;
+  font-weight:bold;
+  padding:8px 12px;
+}
 
-    .hero p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 25px;
-    }
+.hero{
+  text-align:center;
+  padding:35px 20px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 14px 25px;
-      margin: 7px;
-      border-radius: 30px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      background: #25d366;
-    }
+.hero h2{
+  color:#d63384;
+  font-size:28px;
+  margin-bottom:12px;
+}
 
-    .call {
-      background: #8e44ad;
-    }
+.hero p{
+  line-height:1.6;
+  margin-bottom:20px;
+}
 
-    .services {
-      padding: 25px 15px;
-      text-align: center;
-    }
+.btn{
+  display:inline-block;
+  padding:13px 20px;
+  border-radius:30px;
+  text-decoration:none;
+  color:white;
+  background:linear-gradient(135deg,#ff4f9a,#8e44ad);
+  font-weight:bold;
+  border:0;
+  cursor:pointer;
+  margin:5px;
+}
 
-    .services h2 {
-      color: #d63384;
-      margin-bottom: 20px;
-    }
+.btn.green{
+  background:#25D366;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-      max-width: 900px;
-      margin: auto;
-    }
+.btn.red{
+  background:#e74c3c;
+}
 
-    .card {
-      background: white;
-      padding: 25px 15px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
+section{
+  padding:35px 18px;
+  max-width:1100px;
+  margin:auto;
+}
 
-    .card h3 {
-      color: #8e44ad;
-      margin-bottom: 10px;
-    }
+section h2{
+  text-align:center;
+  color:#8e44ad;
+  margin-bottom:25px;
+}
 
-    .contact {
-      text-align: center;
-      padding: 35px 20px;
-      background: #ffe4f1;
-      margin-top: 30px;
-    }
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
 
-    .contact h2 {
-      color: #d63384;
-      margin-bottom: 12px;
-    }
+.card{
+  background:white;
+  padding:20px;
+  border-radius:18px;
+  box-shadow:0 4px 15px #ddd;
+  text-align:center;
+}
 
-    footer {
-      text-align: center;
-      padding: 18px;
-      background: #222;
-      color: white;
-      font-size: 14px;
-    }
-  </style>
+.card h3{
+  color:#d63384;
+  margin-bottom:10px;
+}
+
+.card p{
+  line-height:1.5;
+}
+
+.price{
+  font-size:22px;
+  color:#8e44ad;
+  font-weight:bold;
+  margin:12px 0;
+}
+
+.gallery img,
+.video-box video{
+  width:100%;
+  border-radius:15px;
+  display:block;
+}
+
+.gallery .card{
+  padding:8px;
+}
+
+.offer{
+  background:linear-gradient(135deg,#fff0f7,#f4eaff);
+  border:2px solid #f3c4df;
+}
+
+.contact{
+  text-align:center;
+}
+
+footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+  margin-top:30px;
+}
+
+/* ADMIN */
+
+#adminPanel{
+  display:none;
+  background:#f8f8f8;
+  min-height:100vh;
+  padding:20px;
+}
+
+.admin-box{
+  max-width:900px;
+  margin:auto;
+  background:white;
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 4px 20px #ddd;
+}
+
+.admin-box h2{
+  color:#8e44ad;
+  margin-bottom:15px;
+}
+
+input,textarea,select{
+  width:100%;
+  padding:12px;
+  margin:7px 0 12px;
+  border:1px solid #ccc;
+  border-radius:10px;
+  font-size:15px;
+}
+
+textarea{
+  min-height:100px;
+  resize:vertical;
+}
+
+.admin-section{
+  border-top:1px solid #ddd;
+  padding-top:20px;
+  margin-top:20px;
+}
+
+.status{
+  padding:12px;
+  background:#f2f2f2;
+  border-radius:10px;
+  margin:10px 0;
+}
+
+.hidden{
+  display:none!important;
+}
+
+.small{
+  font-size:13px;
+  color:#666;
+}
+
+.item{
+  background:#fafafa;
+  border:1px solid #ddd;
+  padding:12px;
+  border-radius:12px;
+  margin:8px 0;
+}
+
+.loading{
+  text-align:center;
+  padding:20px;
+  color:#777;
+}
+
+#adminLogin{
+  display:none;
+  max-width:450px;
+  margin:40px auto;
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 4px 20px #ddd;
+}
+
+.close-admin{
+  float:right;
+  cursor:pointer;
+  font-size:24px;
+}
+
+@media(max-width:600px){
+  header h1{
+    font-size:27px;
+  }
+
+  section{
+    padding:28px 14px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>🎈 Dream Decor Ludhiana 🎈</h1>
-    <p>Make Your Special Moments Beautiful</p>
-  </header>
+<!-- CUSTOMER WEBSITE -->
 
-  <section class="hero">
-    <h2>Welcome to Dream Decor</h2>
+<div id="customerApp">
 
-    <p>
-      Birthday Decoration, Anniversary Decoration,
-      Welcome Baby Decoration aur special events ke liye
-      beautiful decoration services in Ludhiana.
+<header>
+  <h1 id="businessName">Dream Decor Ludhiana</h1>
+  <p id="businessTagline">
+    Beautiful Decorations • Birthday • Anniversary • Baby Welcome
+  </p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#packages">Packages</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#offers">Offers</a>
+  <a href="#contact">Book Now</a>
+</nav>
+
+<section class="hero" id="home">
+  <h2 id="heroTitle">Make Your Special Day Beautiful ❤️</h2>
+
+  <p id="heroText">
+    Dream Decor Ludhiana provides beautiful balloon and room decoration
+    for birthdays, anniversaries, baby welcome and special occasions.
+  </p>
+
+  <a id="heroWhatsapp"
+     class="btn green"
+     href="https://wa.me/917657988246"
+     target="_blank">
+     💬 WhatsApp Booking
+  </a>
+
+  <a id="heroCall"
+     class="btn"
+     href="tel:+917657988246">
+     📞 Call Now
+  </a>
+</section>
+
+<section id="services">
+  <h2>🎈 Our Decoration Services</h2>
+
+  <div class="grid" id="servicesGrid">
+    <div class="loading">Loading services...</div>
+  </div>
+</section>
+
+<section id="packages">
+  <h2>💰 Decoration Packages</h2>
+
+  <div class="grid" id="packagesGrid">
+    <div class="loading">Loading packages...</div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>📸 Our Work</h2>
+
+  <div class="grid gallery" id="galleryGrid">
+    <div class="loading">Loading photos...</div>
+  </div>
+</section>
+
+<section id="videos">
+  <h2>🎥 Decoration Videos</h2>
+
+  <div class="grid" id="videosGrid">
+    <div class="loading">Loading videos...</div>
+  </div>
+</section>
+
+<section id="offers">
+  <h2>🎁 Special Offers</h2>
+
+  <div class="grid" id="offersGrid">
+    <div class="loading">Loading offers...</div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>📞 Book Your Decoration</h2>
+
+  <p id="contactText">
+    Ludhiana mein decoration booking ke liye WhatsApp ya call karein.
+  </p>
+
+  <br>
+
+  <a id="contactWhatsapp"
+     class="btn green"
+     href="https://wa.me/917657988246"
+     target="_blank">
+     💬 Book on WhatsApp
+  </a>
+
+  <a id="contactCall"
+     class="btn"
+     href="tel:+917657988246">
+     📞 Call Now
+  </a>
+</section>
+
+<footer>
+  © 2026 Dream Decor Ludhiana | All Rights Reserved
+  <br><br>
+  <button class="btn" onclick="openAdmin()">🔐 Admin</button>
+</footer>
+
+</div>
+
+
+<!-- ADMIN LOGIN -->
+
+<div id="adminLogin">
+
+  <span class="close-admin" onclick="closeAdmin()">×</span>
+
+  <h2>🔐 Admin Login</h2>
+
+  <p class="small">
+    Sirf Dream Decor owner ke liye.
+  </p>
+
+  <input
+    type="email"
+    id="adminEmail"
+    placeholder="Admin Email">
+
+  <input
+    type="password"
+    id="adminPassword"
+    placeholder="Password">
+
+  <button class="btn" onclick="adminLogin()">
+    Login
+  </button>
+
+  <div id="loginMessage" class="status"></div>
+
+</div>
+
+
+<!-- ADMIN PANEL -->
+
+<div id="adminPanel">
+
+<div class="admin-box">
+
+  <button class="btn red" onclick="logoutAdmin()">
+    Logout
+  </button>
+
+  <h2>⚙️ Dream Decor Admin Panel</h2>
+
+  <div id="adminStatus" class="status">
+    Admin panel loading...
+  </div>
+
+
+  <!-- BUSINESS SETTINGS -->
+
+  <div class="admin-section">
+
+    <h3>🏠 Business Information</h3>
+
+    <input
+      id="editBusinessName"
+      placeholder="Business Name">
+
+    <input
+      id="editTagline"
+      placeholder="Tagline">
+
+    <input
+      id="editHeroTitle"
+      placeholder="Home Heading">
+
+    <textarea
+      id="editHeroText"
+      placeholder="Home Description"></textarea>
+
+    <input
+      id="editWhatsapp"
+      placeholder="WhatsApp Number">
+
+    <input
+      id="editPhone"
+      placeholder="Phone Number">
+
+    <button class="btn" onclick="saveBusiness()">
+      💾 Save Business Information
+    </button>
+
+  </div>
+
+
+  <!-- SERVICES -->
+
+  <div class="admin-section">
+
+    <h3>🎈 Services</h3>
+
+    <input
+      id="serviceName"
+      placeholder="Service Name">
+
+    <textarea
+      id="serviceDescription"
+      placeholder="Service Description"></textarea>
+
+    <button class="btn" onclick="addService()">
+      ➕ Add Service
+    </button>
+
+    <div id="adminServices"></div>
+
+  </div>
+
+
+  <!-- PACKAGES -->
+
+  <div class="admin-section">
+
+    <h3>💰 Packages / Rates</h3>
+
+    <input
+      id="packageName"
+      placeholder="Package Name">
+
+    <input
+      id="packagePrice"
+      placeholder="Price e.g. ₹999">
+
+    <textarea
+      id="packageDescription"
+      placeholder="Package Details"></textarea>
+
+    <button class="btn" onclick="addPackage()">
+      ➕ Add Package
+    </button>
+
+    <div id="adminPackages"></div>
+
+  </div>
+
+
+  <!-- OFFERS -->
+
+  <div class="admin-section">
+
+    <h3>🎁 Offers</h3>
+
+    <input
+      id="offerTitle"
+      placeholder="Offer Title">
+
+    <textarea
+      id="offerDescription"
+      placeholder="Offer Description"></textarea>
+
+    <button class="btn" onclick="addOffer()">
+      ➕ Add Offer
+    </button>
+
+    <div id="adminOffers"></div>
+
+  </div>
+
+
+  <!-- GALLERY -->
+
+  <div class="admin-section">
+
+    <h3>📸 Gallery Photo</h3>
+
+    <p class="small">
+      Photo ka public image URL yahan paste karein.
     </p>
 
-    <a class="btn" href="https://wa.me/917657908246">
-      WhatsApp Us
-    </a>
+    <input
+      id="photoUrl"
+      placeholder="https://...image.jpg">
 
-    <a class="btn call" href="tel:+917657908246">
-      📞 Call Now
-    </a>
-  </section>
+    <input
+      id="photoTitle"
+      placeholder="Photo Title">
 
-  <section class="services">
+    <button class="btn" onclick="addPhoto()">
+      ➕ Add Photo
+    </button>
 
-    <h2>Our Services</h2>
+    <div id="adminPhotos"></div>
 
-    <div class="cards">
+  </div>
+
+
+  <!-- VIDEOS -->
+
+  <div class="admin-section">
+
+    <h3>🎥 Video</h3>
+
+    <p class="small">
+      Video ka direct/public URL paste karein.
+    </p>
+
+    <input
+      id="videoUrl"
+      placeholder="Video URL">
+
+    <input
+      id="videoTitle"
+      placeholder="Video Title">
+
+    <button class="btn" onclick="addVideo()">
+      ➕ Add Video
+    </button>
+
+    <div id="adminVideos"></div>
+
+  </div>
+
+
+  <!-- BOOKINGS -->
+
+  <div class="admin-section">
+
+    <h3>📋 Customer Bookings</h3>
+
+    <div id="bookingsList">
+      Loading bookings...
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+
+<!-- FIREBASE -->
+
+<script type="module">
+
+import {
+  initializeApp
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+import {
+  getFirestore,
+  collection,
+  doc,
+  setDoc,
+  addDoc,
+  getDoc,
+  getDocs,
+  deleteDoc,
+  query,
+  orderBy,
+  serverTimestamp
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+
+/* ================================
+   FIREBASE CONFIG
+================================ */
+
+const firebaseConfig = {
+
+  apiKey: "AIzaSyAYuS6aQulhXJmY1nQgxMGkrE-s4aumQ48",
+
+  authDomain:
+    "dream-decor-ludhiana-ede33.firebaseapp.com",
+
+  projectId:
+    "dream-decor-ludhiana-ede33",
+
+  storageBucket:
+    "dream-decor-ludhiana-ede33.firebasestorage.app",
+
+  messagingSenderId:
+    "153038377286",
+
+  appId:
+    "1:153038377286:web:e b17b0b1055ba3622dc9547"
+};
+
+
+/* ================================
+   FIREBASE START
+================================ */
+
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
+const db = getFirestore(app);
+
+
+/* ================================
+   DEFAULT DATA
+================================ */
+
+const defaultBusiness = {
+
+  name: "Dream Decor Ludhiana",
+
+  tagline:
+    "Beautiful Decorations • Birthday • Anniversary • Baby Welcome",
+
+  heroTitle:
+    "Make Your Special Day Beautiful ❤️",
+
+  heroText:
+    "Dream Decor Ludhiana provides beautiful balloon and room decoration for birthdays, anniversaries, baby welcome and special occasions.",
+
+  whatsapp:
+    "917657988246",
+
+  phone:
+    "917657988246"
+
+};
+
+
+/* ================================
+   HELPERS
+================================ */
+
+function whatsappNumber(){
+
+  let number =
+    document.getElementById("editWhatsapp").value ||
+    defaultBusiness.whatsapp;
+
+  number = number.replace(/\D/g,"");
+
+  if(number.length === 10){
+    number = "91" + number;
+  }
+
+  return number;
+}
+
+
+function setLink(id, type, number){
+
+  const element =
+    document.getElementById(id);
+
+  if(!element) return;
+
+  if(type === "whatsapp"){
+
+    element.href =
+      "https://wa.me/" + number;
+
+  }else{
+
+    element.href =
+      "tel:+" + number;
+
+  }
+}
+
+
+/* ================================
+   LOAD BUSINESS
+================================ */
+
+async function loadBusiness(){
+
+  try{
+
+    const ref =
+      doc(db,"siteData","business");
+
+    const snap =
+      await getDoc(ref);
+
+    let data =
+      snap.exists()
+      ? snap.data()
+      : defaultBusiness;
+
+
+    document.getElementById("businessName").textContent =
+      data.name || defaultBusiness.name;
+
+    document.getElementById("businessTagline").textContent =
+      data.tagline || defaultBusiness.tagline;
+
+    document.getElementById("heroTitle").textContent =
+      data.heroTitle || defaultBusiness.heroTitle;
+
+    document.getElementById("heroText").textContent =
+      data.heroText || defaultBusiness.heroText;
+
+
+    const whatsapp =
+      (data.whatsapp || defaultBusiness.whatsapp)
+      .replace(/\D/g,"");
+
+    const phone =
+      (data.phone || defaultBusiness.phone)
+      .replace(/\D/g,"");
+
+
+    setLink(
+      "heroWhatsapp",
+      "whatsapp",
+      whatsapp
+    );
+
+    setLink(
+      "contactWhatsapp",
+      "whatsapp",
+      whatsapp
+    );
+
+    setLink(
+      "heroCall",
+      "call",
+      phone
+    );
+
+    setLink(
+      "contactCall",
+      "call",
+      phone
+    );
+
+
+    document.getElementById("editBusinessName").value =
+      data.name || "";
+
+    document.getElementById("editTagline").value =
+      data.tagline || "";
+
+    document.getElementById("editHeroTitle").value =
+      data.heroTitle || "";
+
+    document.getElementById("editHeroText").value =
+      data.heroText || "";
+
+    document.getElementById("editWhatsapp").value =
+      data.whatsapp || "";
+
+    document.getElementById("editPhone").value =
+      data.phone || "";
+
+
+  }catch(error){
+
+    console.error(error);
+
+  }
+
+}
+
+
+/* ================================
+   SERVICES
+================================ */
+
+async function loadServices(){
+
+  const grid =
+    document.getElementById("servicesGrid");
+
+  const admin =
+    document.getElementById("adminServices");
+
+  grid.innerHTML = "";
+
+  admin.innerHTML = "";
+
+
+  const snap =
+    await getDocs(collection(db,"services"));
+
+
+  if(snap.empty){
+
+    grid.innerHTML = `
+      <div class="card">
+        <h3>🎈 Balloon Decoration</h3>
+        <p>Beautiful balloon designs according to your choice.</p>
+      </div>
 
       <div class="card">
         <h3>🎂 Birthday Decoration</h3>
-        <p>
-          Room aur party venue ke liye beautiful
-          birthday decorations.
-        </p>
+        <p>Special birthday room decoration.</p>
       </div>
 
       <div class="card">
         <h3>❤️ Anniversary Decoration</h3>
-        <p>
-          Romantic anniversary room decoration
-          for your special day.
-        </p>
+        <p>Romantic anniversary decoration.</p>
       </div>
 
       <div class="card">
-        <h3>👶 Welcome Baby</h3>
-        <p>
-          New baby welcome ke liye attractive
-          balloon decorations.
-        </p>
+        <h3>👶 Baby Welcome</h3>
+        <p>Beautiful welcome baby decoration.</p>
+      </div>
+    `;
+
+    return;
+  }
+
+
+  snap.forEach(item => {
+
+    const data = item.data();
+
+
+    grid.innerHTML += `
+      <div class="card">
+        <h3>🎈 ${escapeHtml(data.name)}</h3>
+        <p>${escapeHtml(data.description)}</p>
+      </div>
+    `;
+
+
+    admin.innerHTML += `
+      <div class="item">
+
+        <b>${escapeHtml(data.name)}</b>
+
+        <p>${escapeHtml(data.description)}</p>
+
+        <button
+          class="btn red"
+          onclick="deleteItem('services','${item.id}')">
+          Delete
+        </button>
+
+      </div>
+    `;
+
+  });
+
+}
+
+
+/* ================================
+   PACKAGES
+================================ */
+
+async function loadPackages(){
+
+  const grid =
+    document.getElementById("packagesGrid");
+
+  const admin =
+    document.getElementById("adminPackages");
+
+  grid.innerHTML = "";
+
+  admin.innerHTML = "";
+
+
+  const snap =
+    await getDocs(collection(db,"packages"));
+
+
+  if(snap.empty){
+
+    grid.innerHTML = `
+      <div class="card">
+        <h3>Basic Decoration</h3>
+        <div class="price">₹999</div>
+        <p>Simple and beautiful room decoration.</p>
       </div>
 
       <div class="card">
-        <h3>🎈 Balloon Decoration</h3>
-        <p>
-          Different themes aur balloon designs
-          according to your choice.
-        </p>
+        <h3>Standard Decoration</h3>
+        <div class="price">₹1499</div>
+        <p>Beautiful balloon and theme decoration.</p>
       </div>
 
-    </div>
+      <div class="card">
+        <h3>Premium Decoration</h3>
+        <div class="price">₹2499</div>
+        <p>Premium decoration for your special day.</p>
+      </div>
+    `;
 
-  </section>
+    return;
+  }
 
-  <section class="contact">
 
-    <h2>Book Your Decoration</h2>
+  snap.forEach(item => {
 
-    <p>
-      Ludhiana mein decoration booking ke liye
-      WhatsApp ya call karein.
-    </p>
+    const data = item.data();
 
-    <br>
 
-    <a class="btn" href="https://wa.me/7657908246">
-      💬 Book on WhatsApp
-    </a>
+    grid.innerHTML += `
+      <div class="card">
+        <h3>${escapeHtml(data.name)}</h3>
 
-  </section>
+        <div class="price">
+          ${escapeHtml(data.price)}
+        </div>
 
-  <footer>
-    © 2026 Dream Decor Ludhiana | All Rights Reserved
-  </footer>
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
-  import { getAuth } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
-import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-  const firebaseConfig = {
- 
-apiKey: "AIzaSyAYuS6aQulhXJyM1qQgxMGkrE-s4aumQ48",
-  authDomain: "dream-decor-ludhiana-ede33.firebaseapp.com",
-  projectId: "dream-decor-ludhiana-ede33",
-  storageBucket: "dream-decor-ludhiana-ede33.firebasestorage.app",
-  messagingSenderId: "153038377286",
-  appId: "1:153038377286:web:e17b0b1055ba3622dc9547"
+        <p>
+          ${escapeHtml(data.description)}
+        </p>
+
+        <br>
+
+        <a
+          class="btn green"
+          target="_blank"
+          href="https://wa.me/917657988246?text=I%20want%20to%20book%20${encodeURIComponent(data.name)}">
+          Book This
+        </a>
+
+      </div>
+    `;
+
+
+    admin.innerHTML += `
+      <div class="item">
+
+        <b>${escapeHtml(data.name)}</b>
+
+        <p>
+          ${escapeHtml(data.price)}
+        </p>
+
+        <p>
+          ${escapeHtml(data.description)}
+        </p>
+
+        <button
+          class="btn red"
+          onclick="deleteItem('packages','${item.id}')">
+          Delete
+        </button>
+
+      </div>
+    `;
+
+  });
+
+}
+
+
+/* ================================
+   OFFERS
+================================ */
+
+async function loadOffers(){
+
+  const grid =
+    document.getElementById("offersGrid");
+
+  const admin =
+    document.getElementById("adminOffers");
+
+  grid.innerHTML = "";
+
+  admin.innerHTML = "";
+
+
+  const snap =
+    await getDocs(collection(db,"offers"));
+
+
+  if(snap.empty){
+
+    grid.innerHTML = `
+      <div class="card offer">
+        <h3>🎁 Special Decoration Offer</h3>
+
+        <p>
+          Call or WhatsApp us today for current
+          decoration offers.
+        </p>
+      </div>
+    `;
+
+    return;
+  }
+
+
+  snap.forEach(item => {
+
+    const data = item.data();
+
+
+    grid.innerHTML += `
+      <div class="card offer">
+
+        <h3>🎁 ${escapeHtml(data.title)}</h3>
+
+        <br>
+
+        <p>
+          ${escapeHtml(data.description)}
+        </p>
+
+      </div>
+    `;
+
+
+    admin.innerHTML += `
+      <div class="item">
+
+        <b>${escapeHtml(data.title)}</b>
+
+        <p>${escapeHtml(data.description)}</p>
+
+        <button
+          class="btn red"
+          onclick="deleteItem('offers','${item.id}')">
+          Delete
+        </button>
+
+      </div>
+    `;
+
+  });
+
+}
+
+
+/* ================================
+   GALLERY
+================================ */
+
+async function loadGallery(){
+
+  const grid =
+    document.getElementById("galleryGrid");
+
+  const admin =
+    document.getElementById("adminPhotos");
+
+  grid.innerHTML = "";
+
+  admin.innerHTML = "";
+
+
+  const snap =
+    await getDocs(collection(db,"gallery"));
+
+
+  if(snap.empty){
+
+    grid.innerHTML = `
+      <div class="card">
+        <h3>📸 Your Decoration Photos</h3>
+        <p>Admin panel se photos add karein.</p>
+      </div>
+    `;
+
+    return;
+  }
+
+
+  snap.forEach(item => {
+
+    const data = item.data();
+
+
+    grid.innerHTML += `
+      <div class="card">
+
+        <img
+          src="${escapeAttribute(data.url)}"
+          alt="${escapeAttribute(data.title || "Decoration")}"
+          onerror="this.style.display='none'">
+
+        <p>
+          ${escapeHtml(data.title || "")}
+        </p>
+
+      </div>
+    `;
+
+
+    admin.innerHTML += `
+      <div class="item">
+
+        <b>${escapeHtml(data.title || "Photo")}</b>
+
+        <p class="small">
+          ${escapeHtml(data.url)}
+        </p>
+
+        <button
+          class="btn red"
+          onclick="deleteItem('gallery','${item.id}')">
+          Delete
+        </button>
+
+      </div>
+    `;
+
+  });
+
+}
+
+
+/* ================================
+   VIDEOS
+================================ */
+
+async function loadVideos(){
+
+  const grid =
+    document.getElementById("videosGrid");
+
+  const admin =
+    document.getElementById("adminVideos");
+
+  grid.innerHTML = "";
+
+  admin.innerHTML = "";
+
+
+  const snap =
+    await getDocs(collection(db,"videos"));
+
+
+  if(snap.empty){
+
+    grid.innerHTML = `
+      <div class="card">
+        <h3>🎥 Decoration Videos</h3>
+        <p>Admin panel se videos add karein.</p>
+      </div>
+    `;
+
+    return;
+  }
+
+
+  snap.forEach(item => {
+
+    const data = item.data();
+
+
+    grid.innerHTML += `
+      <div class="card video-box">
+
+        <video controls preload="metadata">
+          <source
+            src="${escapeAttribute(data.url)}">
+        </video>
+
+        <br>
+
+        <p>
+          ${escapeHtml(data.title || "")}
+        </p>
+
+      </div>
+    `;
+
+
+    admin.innerHTML += `
+      <div class="item">
+
+        <b>${escapeHtml(data.title || "Video")}</b>
+
+        <p class="small">
+          ${escapeHtml(data.url)}
+        </p>
+
+        <button
+          class="btn red"
+          onclick="deleteItem('videos','${item.id}')">
+          Delete
+        </button>
+
+      </div>
+    `;
+
+  });
+
+}
+
+
+/* ================================
+   ADMIN OPEN/CLOSE
+================================ */
+
+window.openAdmin = function(){
+
+  document.getElementById("adminLogin").style.display =
+    "block";
+
+  document.getElementById("customerApp").style.display =
+    "none";
+
 };
 
-  const app = initializeApp(firebaseConfig);
-  
-const auth = getAuth(app);
-const db = getFirestore(app);
-const siteRef = doc(db, "siteData", "main");
-const siteSnap = await getDoc(siteRef);
 
-if (siteSnap.exists()) {
-  console.log("Dream Decor data connected:", siteSnap.data());
-}</script>
+window.closeAdmin = function(){
+
+  document.getElementById("adminLogin").style.display =
+    "none";
+
+  document.getElementById("adminPanel").style.display =
+    "none";
+
+  document.getElementById("customerApp").style.display =
+    "block";
+
+};
+
+
+/* ================================
+   ADMIN LOGIN
+================================ */
+
+window.adminLogin = async function(){
+
+  const email =
+    document.getElementById("adminEmail").value.trim();
+
+  const password =
+    document.getElementById("adminPassword").value;
+
+  const message =
+    document.getElementById("loginMessage");
+
+
+  if(!email || !password){
+
+    message.textContent =
+      "Email aur password dono bharo.";
+
+    return;
+  }
+
+
+  try{
+
+    await signInWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
+
+    message.textContent =
+      "Login successful.";
+
+  }catch(error){
+
+    console.error(error);
+
+    message.textContent =
+      "Login failed. Email/password check karo.";
+
+  }
+
+};
+
+
+/* ================================
+   AUTH STATE
+================================ */
+
+onAuthStateChanged(auth, async user => {
+
+  if(user){
+
+    document.getElementById("adminLogin").style.display =
+      "none";
+
+    document.getElementById("customerApp").style.display =
+      "none";
+
+    document.getElementById("adminPanel").style.display =
+      "block";
+
+    document.getElementById("adminStatus").textContent =
+      "✅ Admin logged in: " + user.email;
+
+    await refreshAdmin();
+
+  }
+
+});
+
+
+/* ================================
+   LOGOUT
+================================ */
+
+window.logoutAdmin = async function(){
+
+  await signOut(auth);
+
+  document.getElementById("adminPanel").style.display =
+    "none";
+
+  document.getElementById("customerApp").style.display =
+    "block";
+
+};
+
+
+/* ================================
+   SAVE BUSINESS
+================================ */
+
+window.saveBusiness = async function(){
+
+  const data = {
+
+    name:
+      document.getElementById("editBusinessName").value,
+
+    tagline:
+      document.getElementById("editTagline").value,
+
+    heroTitle:
+      document.getElementById("editHeroTitle").value,
+
+    heroText:
+      document.getElementById("editHeroText").value,
+
+    whatsapp:
+      document.getElementById("editWhatsapp").value,
+
+    phone:
+      document.getElementById("editPhone").value,
+
+    updatedAt:
+      serverTimestamp()
+
+  };
+
+
+  await setDoc(
+    doc(db,"siteData","business"),
+    data,
+    {merge:true}
+  );
+
+
+  alert("✅ Business information saved.");
+
+  await loadBusiness();
+
+};
+
+
+/* ================================
+   ADD SERVICE
+================================ */
+
+window.addService = async function(){
+
+  const name =
+    document.getElementById("serviceName").value.trim();
+
+  const description =
+    document.getElementById("serviceDescription").value.trim();
+
+
+  if(!name){
+
+    alert("Service name bharo.");
+
+    return;
+  }
+
+
+  await addDoc(
+    collection(db,"services"),
+    {
+      name,
+      description,
+      createdAt:serverTimestamp()
+    }
+  );
+
+
+  document.getElementById("serviceName").value = "";
+
+  document.getElementById("serviceDescription").value = "";
+
+  alert("✅ Service added.");
+
+  await loadServices();
+
+};
+
+
+/* ================================
+   ADD PACKAGE
+================================ */
+
+window.addPackage = async function(){
+
+  const name =
+    document.getElementById("packageName").value.trim();
+
+  const price =
+    document.getElementById("packagePrice").value.trim();
+
+  const description =
+    document.getElementById("packageDescription").value.trim();
+
+
+  if(!name || !price){
+
+    alert("Package name aur price bharo.");
+
+    return;
+  }
+
+
+  await addDoc(
+    collection(db,"packages"),
+    {
+      name,
+      price,
+      description,
+      createdAt:serverTimestamp()
+    }
+  );
+
+
+  document.getElementById("packageName").value = "";
+
+  document.getElementById("packagePrice").value = "";
+
+  document.getElementById("packageDescription").value = "";
+
+  alert("✅ Package added.");
+
+  await loadPackages();
+
+};
+
+
+/* ================================
+   ADD OFFER
+================================ */
+
+window.addOffer = async function(){
+
+  const title =
+    document.getElementById("offerTitle").value.trim();
+
+  const description =
+    document.getElementById("offerDescription").value.trim();
+
+
+  if(!title){
+
+    alert("Offer title bharo.");
+
+    return;
+  }
+
+
+  await addDoc(
+    collection(db,"offers"),
+    {
+      title,
+      description,
+      createdAt:serverTimestamp()
+    }
+  );
+
+
+  document.getElementById("offerTitle").value = "";
+
+  document.getElementById("offerDescription").value = "";
+
+  alert("✅ Offer added.");
+
+  await loadOffers();
+
+};
+
+
+/* ================================
+   ADD PHOTO
+================================ */
+
+window.addPhoto = async function(){
+
+  const url =
+    document.getElementById("photoUrl").value.trim();
+
+  const title =
+    document.getElementById("photoTitle").value.trim();
+
+
+  if(!url){
+
+    alert("Photo URL bharo.");
+
+    return;
+  }
+
+
+  await addDoc(
+    collection(db,"gallery"),
+    {
+      url,
+      title,
+      createdAt:serverTimestamp()
+    }
+  );
+
+
+  document.getElementById("photoUrl").value = "";
+
+  document.getElementById("photoTitle").value = "";
+
+  alert("✅ Photo added.");
+
+  await loadGallery();
+
+};
+
+
+/* ================================
+   ADD VIDEO
+================================ */
+
+window.addVideo = async function(){
+
+  const url =
+    document.getElementById("videoUrl").value.trim();
+
+  const title =
+    document.getElementById("videoTitle").value.trim();
+
+
+  if(!url){
+
+    alert("Video URL bharo.");
+
+    return;
+  }
+
+
+  await addDoc(
+    collection(db,"videos"),
+    {
+      url,
+      title,
+      createdAt:serverTimestamp()
+    }
+  );
+
+
+  document.getElementById("videoUrl").value = "";
+
+  document.getElementById("videoTitle").value = "";
+
+  alert("✅ Video added.");
+
+  await loadVideos();
+
+};
+
+
+/* ================================
+   DELETE
+================================ */
+
+window.deleteItem = async function(
+  collectionName,
+  id
+){
+
+  if(!confirm("Kya aap delete karna chahte ho?")){
+
+    return;
+  }
+
+
+  await deleteDoc(
+    doc(db,collectionName,id)
+  );
+
+
+  alert("✅ Deleted.");
+
+  await refreshAdmin();
+
+};
+
+
+/* ================================
+   ADMIN REFRESH
+================================ */
+
+async function refreshAdmin(){
+
+  await loadBusiness();
+
+  await loadServices();
+
+  await loadPackages();
+
+  await loadOffers();
+
+  await loadGallery();
+
+  await loadVideos();
+
+}
+
+
+/* ================================
+   SAFE HTML
+================================ */
+
+function escapeHtml(value){
+
+  if(value === undefined || value === null){
+
+    return "";
+
+  }
+
+  return String(value)
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
+}
+
+
+function escapeAttribute(value){
+
+  return escapeHtml(value);
+
+}
+
+
+/* ================================
+   INITIAL LOAD
+================================ */
+
+loadBusiness();
+
+loadServices();
+
+loadPackages();
+
+loadOffers();
+
+loadGallery();
+
+loadVideos();
+
+</script>
+
 </body>
 </html>
-
-
