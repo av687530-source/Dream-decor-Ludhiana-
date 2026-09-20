@@ -209,7 +209,7 @@
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
   import { getAuth } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
-
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
   const firebaseConfig = {
   apiKey: "AIzaSyAYuS6aQulhXJyM1qQgxMGkrE-s4aumQ48",
   authDomain: "dream-decor-ludhiana-ede33.firebaseapp.com",
@@ -220,7 +220,7 @@
 };
 
   const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
+  const auth = getAuth(app);const auth = getAuth(app);const db = getFirestore(app);
 </script>
 </body>
 </html>
