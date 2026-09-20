@@ -209,9 +209,10 @@
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
   import { getAuth } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
   const firebaseConfig = {
-  apiKey: "AIzaSyAYuS6aQulhXJyM1qQgxMGkrE-s4aumQ48",
+ 
+apiKey: "AIzaSyAYuS6aQulhXJyM1qQgxMGkrE-s4aumQ48",
   authDomain: "dream-decor-ludhiana-ede33.firebaseapp.com",
   projectId: "dream-decor-ludhiana-ede33",
   storageBucket: "dream-decor-ludhiana-ede33.firebasestorage.app",
@@ -223,7 +224,12 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebas
   
 const auth = getAuth(app);
 const db = getFirestore(app);
-</script>
+const siteRef = doc(db, "siteData", "main");
+const siteSnap = await getDoc(siteRef);
+
+if (siteSnap.exists()) {
+  console.log("Dream Decor data connected:", siteSnap.data());
+}</script>
 </body>
 </html>
 
